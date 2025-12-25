@@ -8,10 +8,15 @@ export default function Navbar() {
                 <ul className="navbar-nav">
 
                     <li className="nav-item">
+                    <li className="nav-item">
+</li>
                     <a className="nav-link" href="/home.html">Home</a> {/* Link to home.html */}
                     </li>
                     <li className="nav-item">
+                        
                         <a className="nav-link" href="/app">Gifts</a> {/* Updated Link */}
+                    
+    <Link className="nav-link" to="/app/search">Search</Link>
                     </li>
                 </ul>
             </div>
