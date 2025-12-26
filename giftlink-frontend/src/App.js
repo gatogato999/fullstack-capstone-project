@@ -12,18 +12,18 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
   const navigate = useNavigate();
   return (
-        <>
-        <Navbar/>
-        <Routes>
-        <Route path="/app/search" element={<SearchPage/>} />
-          <Route path="/" element={<MainPage />} />
-          <Route path="/app" element={<MainPage />} />
-          <Route path="/app/login" element={<LoginPage/>} />
-          <Route path="/app/profile" element={<Profile/>} />
-          <Route path="/app/product/:productId" element={<DetailsPage/>} />
-          <Route path="/app/register" element={<RegisterPage />} />
-        </Routes>
-        </>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/app/search" element={<SearchPage />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/app" element={<MainPage />} />
+        <Route path="/app/login" element={<LoginPage />} />
+        <Route path="/app/profile" element={<Profile />} />
+        <Route path="/app/product/:productId" element={<DetailsPage />} />
+        <Route path="/app/register" element={<RegisterPage />} />
+      </Routes>
+    </>
   );
 }
 export default App;

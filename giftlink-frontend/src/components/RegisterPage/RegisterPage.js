@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //Step 1 - Task 1
-import {urlConfig} from '../../config';
+import { urlConfig } from '../../config';
 
 //Step 1 - Task 2
 import { useAppContext } from '../../context/AuthContext';
@@ -17,7 +17,7 @@ function RegisterPage() {
     const [password, setPassword] = useState('');
 
     //Step 1 - Task 4
-     const [showerr, setShowerr] = useState('');
+    const [showerr, setShowerr] = useState('');
 
     //Step 1 - Task 5
     const navigate = useNavigate();
@@ -50,13 +50,13 @@ function RegisterPage() {
             sessionStorage.setItem('auth-token', json.authtoken);
             sessionStorage.setItem('name', firstName);
             sessionStorage.setItem('email', json.email);
-        //Step 2 - Task 3
+            //Step 2 - Task 3
             setIsLoggedIn(true);
-        //Step 2 - Task 4
+            //Step 2 - Task 4
             navigate('/app');
         }
         if (json.error) {
-        //Step 2 - Task 5
+            //Step 2 - Task 5
             setShowerr(json.error);
         }
     }
@@ -104,9 +104,9 @@ function RegisterPage() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
-                        {/* Step 2 - Task 6*/}
+                            {/* Step 2 - Task 6*/}
 
-                                <div className="text-danger">{showerr}</div>
+                            <div className="text-danger">{showerr}</div>
                         </div>
 
                         <div className="mb-4">
