@@ -15,8 +15,8 @@ export default function Navbar() {
                     <li className="nav-item">
                         
                         <a className="nav-link" href="/app">Gifts</a> {/* Updated Link */}
-                    
-    <Link className="nav-link" to="/app/search">Search</Link>
+             {/* try change from link to a */}       
+                        <a className="nav-link" href="/app/search" to="/app/search">Search</a>
                     </li>
                 </ul>
             </div>
